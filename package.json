@@ -1,0 +1,22 @@
+{
+  "name": "errands",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "nodemon": "^1.9.2",
+    "should": "^10.0.0",
+    "supertest": "^1.2.0"
+  }
+}
