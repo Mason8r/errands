@@ -1,0 +1,4 @@
+--ui bdd
+--recursive
+--require should
+--reporter nyan

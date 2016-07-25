@@ -1,0 +1,14 @@
+[
+  {
+      "title": "New Errand",
+      "description": "This is a new errend, perhaps it should be loaded from a json test data file?",
+      "completedBy": "11/10/2016",
+      "categories": ["this","is","an","array","of","categories"]
+  },
+  {
+      "title": "Second Job",
+      "description": "Slightly smaller description for this one.",
+      "completedBy": "02/04/2017",
+      "categories": ["one","two","three!"]
+  }
+]

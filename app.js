@@ -6,12 +6,10 @@ var defaults = require('./routes/defaults');
 var errands = require('./routes/errands');
 
 var dbName = process.env.NODE_ENV == 'test' ?  'errandTestDB' : 'errandDB';
-
 var connectionString = 'mongodb://localhost/' + dbName;
+mongoose.connect(connectionString);
 
 var app = express();
-
-mongoose.connect(connectionString);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
