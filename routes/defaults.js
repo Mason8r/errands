@@ -1,14 +1,14 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
-router.route('/')
+router.route("/")
 
   .get(function(req, res) {
-    res.json({data:'API V.0.2'});
+    res.json({message:"API V.0.1"});
   })
 
   .all(function(req, res) {
-    res.send(405,"method not allowed");
+    res.json(405,{message:"method not allowed"});
   });
 
 module.exports = router;

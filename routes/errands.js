@@ -1,8 +1,8 @@
-var Errand = require('../models/errand');
-var express = require('express');
+var Errand = require("../models/errand");
+var express = require("express");
 var router = express.Router();
 
-router.route('/')
+router.route("/")
 
   .get(function(req, res) {
       Errand.find(function(err, errands) {
@@ -30,7 +30,7 @@ router.route('/')
         res.json(err);
       }
 
-      res.json({ message: 'Errand Added', data: errand });
+      res.json({ message: "Errand Added", data: errand });
 
     });
 
