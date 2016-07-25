@@ -17,8 +17,6 @@ router.route('/')
 
   .post(function(req, res) {
 
-    //I create the errand in this arse about face
-    //way as it's the cleanest looking to create the Date
     var errand = new Errand({
       title: req.body.title,
       description:req.body.description,
