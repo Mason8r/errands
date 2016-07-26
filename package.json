@@ -9,16 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
-    "debug": "^2.2.0",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.6",
     "mongoose": "^4.5.5",
     "urlify": "^0.3.6"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
+    "morgan": "^1.7.0",
     "nodemon": "^1.9.2",
     "should": "^10.0.0",
     "supertest": "^1.2.0"
