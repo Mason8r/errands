@@ -46,4 +46,18 @@ describe("Errands Endpoint:",function(){
       .end(done);
   });
 
+  // it("Get with URLised variable returns single Errand",function(done){
+
+  //   let id = "new_errand";
+
+  //   supertest
+  //     .get("/errands/" + id)
+  //     .expect(function(res) {
+  //       res.body.should.be.an.instanceOf(Object);
+  //       res.body.data.should.have.property("title","New Errand");
+  //     })
+  //     .end(done);
+
+  // });
+
 });

@@ -8,7 +8,7 @@ router.route("/")
   })
 
   .all(function(req, res) {
-    res.json(405,{message:"method not allowed"});
+    res.status(405).json({message:"method not allowed"});
   });
 
 module.exports = router;

@@ -1,5 +1,6 @@
 var Errand = require("../models/errand");
 var express = require("express");
+var urlify = require("urlify").create();
 var router = express.Router();
 
 router.route("/")
@@ -19,6 +20,7 @@ router.route("/")
 
     var errand = new Errand({
       title: req.body.title,
+      slug: req.body.slug ? req.body.slug : urlify(req.body.title),
       description:req.body.description,
       completedBy: new Date(req.body.completedBy),
       categories:req.body.categories
@@ -27,7 +29,10 @@ router.route("/")
     errand.save(function(err) {
 
       if (err) {
-        res.json(err);
+        res.status(403).json({
+          message: err.errmsg, 
+          data: err
+        });
       }
 
       res.json({ message: "Errand Added", data: errand });
