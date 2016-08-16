@@ -27,7 +27,11 @@ router.route("/login")
             return res.json({message: "Username not found"})
           }
 
-          let token = jwt.sign(user, process.env.SECRET);
+          let token = jwt.sign({
+              admin : user.admin,
+              username : user.username,
+              email : user.email
+            }, process.env.SECRET);
 
           res.json({message:"login successful", token: token});
       });

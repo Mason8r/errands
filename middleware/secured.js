@@ -1,4 +1,5 @@
 let jwt = require('jsonwebtoken');
+
 let secured = function(req, res, next) {
   let token = req.headers.authorization;
   if (token) {
